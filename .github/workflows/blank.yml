@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      iksEnvironment:
+        description: "IKS Environment"
+        required: true
+        default: "dev"
+        type: environment  
+
+jobs:
+  test_env:
+    name: Testing now
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Test
+        run: |
+          echo ${{ vars.ping }}
+ 
