@@ -13,6 +13,7 @@ jobs:
   test_env:
     name: Testing now
     runs-on: ubuntu-latest
+    environment: ${{ inputs.iksEnvironment }}
 
     steps: 
       - name: Test
