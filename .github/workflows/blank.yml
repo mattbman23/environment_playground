@@ -18,5 +18,6 @@ jobs:
     steps: 
       - name: Test
         run: |
-          echo ${{ vars.ping }}
+          echo ${{ vars.ping }} with runner id of ${{ github.run_id }}
+          
  
